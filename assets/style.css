@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+}
+    :root {
+        --color-white: #FFFFFF;
+        --font-text: #000000;
+        --background-color: #F1ECE6;
+        --background-beige: #E3D1C1;
+        --ballon-beige: #AA7850;
+        --border-color: #745237;
+    }
+
+/* ------------ */
+#fontTitle{
+    font-family: "Crimson Text", serif;
+}
