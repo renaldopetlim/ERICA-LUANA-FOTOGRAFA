@@ -6,17 +6,75 @@
     box-sizing: border-box;
     background-color: var(--background-color);
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
-    :root {
-        --color-white: #FFFFFF;
-        --font-text: #000000;
-        --background-color: #F1ECE6;
-        --background-beige: #E3D1C1;
-        --ballon-beige: #AA7850;
-        --border-color: #745237;
+    body{
+        padding: 0 90px 0 90px;
     }
+        :root {
+            --color-white: #FFFFFF;
+            --font-text: #000000;
+            --background-color: #F1ECE6;
+            --background-beige: #E3D1C1;
+            --ballon-beige: #AA7850;
+            --border-color: #745237;
+        }
+            #fontTitle{
+                font-family: "Crimson Text", serif;
+            }
 
-/* ------------ */
-#fontTitle{
-    font-family: "Crimson Text", serif;
-}
+/* ------ INVESTIMENTO ------ */
+    .invest{
+        font-size: 60px;
+        color: var(--ballon-beige);
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px 0;
+    }
+    .packImages{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 15px 0 15px 0;
+    }
+        .packImages img{
+            width: 240px;
+        }
+    .packs{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 15px 0 15px 0;
+    }
+        .packs div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0 15px 0;
+        }
+            .packs div h3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                font-weight: 400;
+                color: var(--background-color);
+                background-color: var(--ballon-beige);
+                width: 125px;
+                height: 35px;
+                border-radius: 10px;
+                margin: 10px;
+            }
+            .packs div p{
+                font-size: 18px;
+                padding: 5px 0 5px 0;
+            }
+            .packs div button{
+                font-size: 18px;
+                margin: 10px 0 10px 0;
+                width: 110px;
+                height: 36px;
+                border-radius: 25px;
+                cursor: pointer;
+                border: 2px solid #745237;
+            }
