@@ -23,6 +23,89 @@
                 font-family: "Crimson Text", serif;
             }
 
+
+/* ------ SOBRE ------ */
+    .about{
+        font-size: 60px;
+        font-weight: 600;
+        color: var(--ballon-beige);
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 10px 0;
+    }
+        .about-container{
+            display: flex;
+            align-items: center;
+        }
+                .about-container img{
+                    border-radius: 125px 125px 0 0;
+                    padding: 0 10px 0 0;
+                }
+                .about-text{
+                    font-size: 20px;
+                    text-align: justify;
+                    padding: 0 0 0 10px;
+                }
+                        .text-span{
+                            padding-top: 15px;
+                        }
+
+/* ------ PAINEL de FOTOS ------ */
+
+
+/* ------ SOBRE 2.0 ------ */
+    .about-second-text{
+        font-size: 20px;
+        text-align: justify;
+        padding: 15px 0 0 0;
+    }
+
+/* ------ PORQUE? ------ */
+    .what{
+        font-size: 60px;
+        color: var(--ballon-beige);
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px 0;
+    }
+    .what-sections{
+        display: flex;
+        align-items: center;
+        padding: 5px 0 5px;
+    }
+            .what-title{
+                font-size: 40px;
+                font-weight: 600;
+                color: var(--ballon-beige);
+                padding: 30px 0 0 15px;
+                margin: 10px 0 0 0;
+            }
+                    .ballon-one{
+                        background-color: var(--background-beige);
+                        border-radius: 0 10px 0 0;
+                    }
+                    .ballon-two{
+                        background-color: var(--background-beige);
+                        border-radius: 0 0 10px 0;
+                    }
+                    .ballon-three{
+                        background-color: var(--background-beige);
+                        border-radius: 10px 0 0 0;
+                    }
+                    .ballon-four{
+                        background-color: var(--background-beige);
+                        border-radius: 0 0 0 10px;
+                    }
+            .what-text{
+                font-size: 30px;
+                text-align: justify;
+                padding: 10px 15px 30px 15px;
+                margin: 0 0 10px 0;
+            }
+        .what-sections img{
+            border-radius: 10px;
+        }
+
 /* ------ INVESTIMENTO ------ */
     .invest{
         font-size: 60px;
@@ -77,4 +160,66 @@
                 border-radius: 25px;
                 cursor: pointer;
                 border: 2px solid #745237;
+            }
+
+    .schedule{
+        font-size: 40px;
+        color: var(--ballon-beige);
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px 0;
+    }
+        .schedule-text{
+            font-size: 20px;
+            margin: 0 60px 0 60px;
+            padding: 8px 0 8px 0;
+            text-align: justify;
+        }
+
+    .receipt{
+        font-size: 30px;
+        color: var(--ballon-beige);
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px 0;
+    }
+        .receipt-text{
+            font-size: 20px;
+            margin: 0 60px 0 60px;
+            padding: 8px 0 8px 0;
+            text-align: justify;
+        }
+
+    .payment{
+        font-size: 40px;
+        color: var(--ballon-beige);
+        display: flex;
+        justify-content: center;
+        margin: 15px 0 15px 0;
+    }
+        .payment-text{
+            font-size: 20px;
+            margin: 0 60px 0 60px;
+            padding: 8px 0 8px 0;
+            text-align: justify;
+        }
+        .container-button{
+            display: flex;
+            justify-content: center;
+            padding: 5px 0 20px 0;
+        }
+            .payment-button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                font-weight: 300;
+                color: var(--background-color);
+                background-color: var(--ballon-beige);
+                width: 270px;
+                height: 32px;
+                border-radius: 10px;
+                border: none;
+                margin: 10px;
+                cursor: pointer;
             }
