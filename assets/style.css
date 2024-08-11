@@ -103,12 +103,10 @@
                 #portifolio button.prev{
                     left: 15px;
                     border-radius: 25px;
-                    box-shadow: none;
                 }
                 #portifolio button.next{
                     right: 15px;
                     border-radius: 25px;
-                    box-shadow: none;
                 }
                     #portifolio button img{
                         border-radius: 25px;
