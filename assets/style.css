@@ -31,54 +31,88 @@
         top: 0;
         padding: 0 125px 0 0;
     }
-                header li{
-                    list-style-type: none;
+        header li{
+            list-style-type: none;
+        }
+            header a{
+                color: var(--font-text);
+                font-size: 18px;
+                text-decoration: none;
+                padding: 0 0 0 20px;
+            }
+                header a:hover{
+                    color: var(--footer-background);
                 }
-                    header a{
-                        color: var(--font-text);
-                        font-size: 18px;
-                        text-decoration: none;
-                        padding: 0 0 0 20px;
-                    }
-                        header a:hover{
-                            color: var(--footer-background);
-                        }
 
 /* ------ SOBRE ------ */
     #sobre{
         padding: 0 125px 0 125px;
     }
         .about{
-                font-size: 60px;
-                font-weight: 600;
-                color: var(--ballon-beige);
+            font-size: 60px;
+            font-weight: 600;
+            color: var(--ballon-beige);
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 10px 0;
+        }
+            .about-container{
                 display: flex;
-                justify-content: center;
-                margin: 15px 0 10px 0;
+                align-items: center;
+                padding-bottom: 15px;
             }
-                .about-container{
-                    display: flex;
-                    align-items: center;
-                    padding-bottom: 15px;
-                }
-                        .about-container img{
-                            border-radius: 125px 125px 0 0;
-                            padding: 0 10px 0 0;
-                        }
-                        .about-text{
-                            font-size: 20px;
-                            text-align: justify;
-                            padding: 0 0 0 10px;
-                        }
-                                .text-span{
-                                    padding-top: 15px;
-                                }
+                    .about-container img{
+                        border-radius: 125px 125px 0 0;
+                        padding: 0 10px 0 0;
+                    }
+                    .about-text{
+                        font-size: 20px;
+                        text-align: justify;
+                        padding: 0 0 0 10px;
+                    }
+                            .text-span{
+                                padding-top: 15px;
+                            }
 
 /* ------ PAINEL de FOTOS ------ */
 
     #portifolio{
-        padding: 0 125px 0 125px;
+        margin: 0 75px 0 75px;
     }
+        .carousel-container{
+            position: relative;
+            overflow: hidden;
+        }
+            .carousel{
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+                .carousel img{
+                    width: 280px;
+                    padding: 0 10px 0 0;
+                    border-radius: 25px;
+                }
+            #portifolio button{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                border: none;
+                cursor: pointer;
+            }
+                #portifolio button.prev{
+                    left: 15px;
+                    border-radius: 25px;
+                    box-shadow: none;
+                }
+                #portifolio button.next{
+                    right: 15px;
+                    border-radius: 25px;
+                    box-shadow: none;
+                }
+                    #portifolio button img{
+                        border-radius: 25px;
+                    }
 
 /* ------ SOBRE 2.0 ------ */
     #about-second{
@@ -106,35 +140,35 @@
             align-items: center;
             padding: 5px 0 5px;
         }
-                .what-title{
-                    font-size: 40px;
-                    font-weight: 600;
-                    color: var(--ballon-beige);
-                    padding: 30px 0 0 15px;
-                    margin: 10px 0 0 0;
-                }
-                        .ballon-one{
-                            background-color: var(--background-beige);
-                            border-radius: 0 10px 0 0;
-                        }
-                        .ballon-two{
-                            background-color: var(--background-beige);
-                            border-radius: 0 0 10px 0;
-                        }
-                        .ballon-three{
-                            background-color: var(--background-beige);
-                            border-radius: 10px 0 0 0;
-                        }
-                        .ballon-four{
-                            background-color: var(--background-beige);
-                            border-radius: 0 0 0 10px;
-                        }
-                .what-text{
-                    font-size: 30px;
-                    text-align: justify;
-                    padding: 10px 15px 30px 15px;
-                    margin: 0 0 10px 0;
-                }
+            .what-title{
+                font-size: 40px;
+                font-weight: 600;
+                color: var(--ballon-beige);
+                padding: 30px 0 0 15px;
+                margin: 10px 0 0 0;
+            }
+                    .ballon-one{
+                        background-color: var(--background-beige);
+                        border-radius: 0 10px 0 0;
+                    }
+                    .ballon-two{
+                        background-color: var(--background-beige);
+                        border-radius: 0 0 10px 0;
+                    }
+                    .ballon-three{
+                        background-color: var(--background-beige);
+                        border-radius: 10px 0 0 0;
+                    }
+                    .ballon-four{
+                        background-color: var(--background-beige);
+                        border-radius: 0 0 0 10px;
+                    }
+            .what-text{
+                font-size: 30px;
+                text-align: justify;
+                padding: 10px 15px 30px 15px;
+                margin: 0 0 10px 0;
+            }
             .what-sections img{
                 border-radius: 10px;
             }
@@ -229,38 +263,38 @@
     #contato{
         padding: 0 125px 0 125px;
     }
-            .payment{
-                font-size: 40px;
-                color: var(--ballon-beige);
+        .payment{
+            font-size: 40px;
+            color: var(--ballon-beige);
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 15px 0;
+        }
+            .payment-text{
+                font-size: 20px;
+                padding: 8px 0 8px 0;
+                text-align: justify;
+            }
+            .container-button{
                 display: flex;
                 justify-content: center;
-                margin: 15px 0 15px 0;
+                padding: 5px 0 20px 0;
             }
-                .payment-text{
-                    font-size: 20px;
-                    padding: 8px 0 8px 0;
-                    text-align: justify;
-                }
-                .container-button{
+                .payment-button{
                     display: flex;
                     justify-content: center;
-                    padding: 5px 0 20px 0;
+                    align-items: center;
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: var(--background-color);
+                    background-color: var(--ballon-beige);
+                    width: 270px;
+                    height: 32px;
+                    border-radius: 10px;
+                    border: none;
+                    margin: 10px;
+                    cursor: pointer;
                 }
-                    .payment-button{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 18px;
-                        font-weight: 300;
-                        color: var(--background-color);
-                        background-color: var(--ballon-beige);
-                        width: 270px;
-                        height: 32px;
-                        border-radius: 10px;
-                        border: none;
-                        margin: 10px;
-                        cursor: pointer;
-                    }
 
 /* ------ FOOTER ------ */
     #footer{
