@@ -13,11 +13,11 @@ function updateCarousel() {
 nextButton.addEventListener('click', () => {
     index = (index + 1) % images.length;
     updateCarousel();
-}); // Adicionam a funcionalidade aos botões de navegação.
+}); // Adiciona a funcionalidade "NEXT" ao botão de navegação.
 
 prevButton.addEventListener('click', () => {
     index = (index - 1 + images.length) % images.length;
     updateCarousel();
-}) // Adicionam a funcionalidade aos botões de navegação.
+}); // Adiciona a funcionalidade "PREV" ao botão de navegação.
 
 window.addEventListener('resize', updateCarousel);
