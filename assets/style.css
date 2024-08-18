@@ -324,3 +324,17 @@
                 align-items: center;
                 justify-content: center;
             }
+
+    /* SMARTPHONE */
+@media screen and (max-width: 767px) {
+    #footer{
+        display: none;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #footer{
+        display: none;
+    }
+}
